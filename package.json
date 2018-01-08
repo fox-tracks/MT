@@ -1,0 +1,23 @@
+{
+  "name": "megatube",
+  "version": "1.0.0",
+  "description": "test landing page",
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "^7.2.4",
+    "browser-sync": "^2.23.2",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "test",
+    "sass": "sass",
+    "build": "gulp build-full"
+  },
+  "author": "",
+  "license": "ISC"
+}
