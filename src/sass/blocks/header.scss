@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header__wrapper {
+    @include wrapper(300px);
+}
+
+.header__nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+

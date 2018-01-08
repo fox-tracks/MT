@@ -9,31 +9,33 @@
   </head>
   <body class="page">
     <header class="page__header header">
-      <nav class="header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a>Мой аккаунт</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a>Просмотренное</a>
-          </li>
-          <li class="main-nav__item">
-            <a>Плэйлист</a>
-          </li>
-          <li class="main-nav__item">
-            <a>Выход</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__menu-button hamburger-toggle">Кнопка меню</button>
-      <a class="header__logo logo">
-        <span class="logo__text--red">Mega</span>Tube</a>
-      <form class="header__search-wrap search-wrap">
-        <input type="search" id="search-text" name="search-text" class="search-wrap__text">
-        <label for="search-text">
-          <img class="search-wrap__icon">
-        </label>
-      </form>
+      <div class="header__wrapper">
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Мой аккаунт</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Просмотренное</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Плэйлист</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Выход</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__menu-button hamburger-toggle">Кнопка меню</button>
+        <a class="header__logo logo">
+          <span class="logo__text--red">Mega</span>Tube</a>
+        <form class="header__search-wrap search-wrap">
+          <input type="search" id="search-text" name="search-text" class="search-wrap__text">
+          <label for="search-text">
+            <img class="search-wrap__icon">
+          </label>
+        </form>
+      </div>
     </header>
     <main class="page__content content">
       <h1 class="page__title">Сервис MegaTube</h1>
@@ -142,7 +144,7 @@
             </label>
             <a href="http://ya.ru">Продолжить</a>
           </form>
-        </div>
       </div>
+    </div>
     </div>
   </body>

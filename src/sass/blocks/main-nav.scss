@@ -1,0 +1,27 @@
+.main-nav {
+    width: 220px;
+    font-size: 18px;
+    background-color: $menu_bg;
+    color: rgb(255, 255, 255);
+}
+
+.main-nav__list {
+    @include indent(0, 0);
+    @include list();
+    margin-top: 20px;
+    border-top: 1px solid rgb(110, 110, 100);
+}
+
+.main-nav__item {
+    @include indent(0, 0);
+    border-bottom: 1px solid rgb(110, 110, 100);
+}
+
+.main-nav__link {
+    display: block;
+    padding: 20px;
+
+    &--active {
+        background-color: $active;
+    }
+}

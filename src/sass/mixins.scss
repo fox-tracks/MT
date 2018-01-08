@@ -1,0 +1,17 @@
+@mixin indent($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin list(){
+    list-style: none;
+}
+
+@mixin wrapper($width) {
+    width: $width;
+    margin: 0 auto;
+}
+
+@mixin underline(){
+    text-decoration: underline;
+}
