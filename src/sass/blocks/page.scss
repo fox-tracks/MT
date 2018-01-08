@@ -1,4 +1,6 @@
 .page {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: "Opensans", "Tahoma", sans-serif;
   font-weight: 400;
