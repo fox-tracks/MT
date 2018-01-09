@@ -1,17 +1,28 @@
 .header {
-    display: flex;
-    justify-content: flex-start;
+    background-color: $background;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
 }
 
 .header__wrapper {
-    @include wrapper(300px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .header__nav {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+    right: 100%;
     z-index: 1;
 }
 
+.header__menu-button {
+    margin-right: 10px;
+}
+
+.header__logo {
+    margin-right: auto;
+}

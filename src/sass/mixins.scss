@@ -7,10 +7,10 @@
     list-style: none;
 }
 
-@mixin wrapper($width) {
-    width: $width;
-    margin: 0 auto;
-}
+// @mixin wrapper($width) {
+//     width: $width;
+//     margin: 0 auto;
+// }
 
 @mixin underline(){
     text-decoration: underline;

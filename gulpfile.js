@@ -7,8 +7,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
-// var server = require("browser-sync").create();
 var htmlmin = require("gulp-htmlmin");
+var imagemin = require("gulp-imagemin");
 var del = require("del");
 
 gulp.task('sass', ["clean"], function () {
@@ -25,14 +25,23 @@ gulp.task('sass', ["clean"], function () {
     // .pipe(server.stream());
 });
 
-gulp.task("html", ["clean"],function () {
+gulp.task("html", ["clean"], function () {
     return gulp.src("*.html")
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest("dist"));
+});
+
+gulp.task("images", ["clean"], function () {
+    return gulp.src("src/img/**/*.{png,jpg,svg}")
+        .pipe(imagemin([
+            imagemin.optipng({ optimizationLevel: 3 }),
+            imagemin.jpegtran({ progressive: true })
+        ]))
+        .pipe(gulp.dest("dist/img"));
 });
 
 gulp.task("clean", function () {
     return del("dist");
 });
 
-gulp.task("build", ['sass', 'html']);
+gulp.task("build", ['sass', 'html', 'images']);

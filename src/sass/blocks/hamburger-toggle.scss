@@ -1,0 +1,31 @@
+.hamburger-toggle {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  height: 13px;
+  display: block;
+}
+
+.hamburger-toggle__bar {
+  width: 15px;
+  height: 3px;
+  background-color: rgb(34, 34, 34);
+  position: relative;
+  top: 1px;
+}
+
+.hamburger-toggle__bar::before {
+  @extend .hamburger-toggle__bar;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 5px;
+}
+
+.hamburger-toggle__bar::after {
+  @extend .hamburger-toggle__bar;
+  display: block;
+  content: "";
+  position: absolute;
+  top: -5px;
+}

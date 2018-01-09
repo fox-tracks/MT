@@ -26,13 +26,15 @@
             </li>
           </ul>
         </nav>
-        <button class="header__menu-button hamburger-toggle">Кнопка меню</button>
+        <button class="header__menu-button hamburger-toggle">
+          <div class="hamburger-toggle__bar"></div>
+        </button>
         <a class="header__logo logo">
-          <span class="logo__text--red">Mega</span>Tube</a>
+          <span class="logo__text--strong">Mega</span>Tube</a>
         <form class="header__search-wrap search-wrap">
-          <input type="search" id="search-text" name="search-text" class="search-wrap__text">
-          <label for="search-text">
-            <img class="search-wrap__icon">
+          <label class="search-wrap__label">
+            <input type="search" id="search-text" name="search-text" size="10" placeholder="Найти..." class="search-wrap__text">
+            <img src="img/search_icon.png" class="search-wrap__icon" width="27" height="30">
           </label>
         </form>
       </div>
