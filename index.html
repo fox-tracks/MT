@@ -1,158 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MegaTube</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <!-- <script src="js/vendor/picturefill.min.js" async></script> -->
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MegaTube</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <script src="js/vendor/picturefill.min.js" async></script> -->
+  </head>
 
-<body class="page">
-  <header class="page__header header section">
-    <div class="header__wrapper">
-      <nav class="header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link">Мой аккаунт</a>
+  <body class="page">
+    <header class="page__header header section">
+      <div class="header__wrapper">
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Мой аккаунт</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Просмотренное</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Плэйлист</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Выход</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__menu-button hamburger-toggle">
+          <div class="hamburger-toggle__bar"></div>
+        </button>
+        <a class="header__logo logo">
+          <span class="logo__text--strong">Mega</span>Tube</a>
+        <form class="header__search-wrap search-wrap">
+          <label class="search-wrap__label">
+            <input type="search" id="search-text" name="search-text" size="10" placeholder="Найти..." class="search-wrap__text">
+            <img src="img/search_icon.png" class="search-wrap__icon" width="27" height="30">
+          </label>
+        </form>
+      </div>
+    </header>
+    <main class="page__content content">
+      <h1 class="page__title visually-hidden">Сервис MegaTube</h1>
+      <article class="content__video-block video-block">
+        <h2 class="video-block__title visually-hidden">Видео Borat greets</h2>
+        <div class="video-block__video video">
+          <video class="video__video-clip" src="#" poster="img/preview.jpg"></video>
+          <button class="video__play-btn play-btn">
+            <div class="play-btn__wrapper">
+              <div class="play-btn__main-text">Смотреть</div>
+              <div class="play-btn__icon-wrap">
+                <img src="img/big-arrow.png" class="play-btn__icon">
+              </div>
+            </div>
+            <div class="play-btn__notice">Услуга предоставляется только лицам, достигшим&nbsp;совершеннолетия. Услуга платная.</div>
+          </button>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__play-position"></div>
+          <div class="progress-bar__load-position"></div>
+        </div>
+        <section class="video-block__controls controls section">
+          <div class="controls__element-wrapper">
+            <button class="controls__element controls-btn controls-btn--play">Play
+              <img>
+            </button>
+            <a href="#" class="controls__element controls-btn controls-btn--next">Next
+              <img>
+            </a>
+            <button class="controls__element controls-btn controls-btn--volume">Volume
+              <img>
+            </button>
+            <div class="controls__element time-wrapper">
+              <span class="time-wrapper__current-time">2:23 </span>
+              <span class="time-wrapper__duration">/ 7:31</span>
+            </div>
+            <button class="controls__element controls-btn controls-btn--wide-screen">Широкий экран
+              <img>
+            </button>
+            <button class="controls__element controls-btn controls-btn--full-screen">На весь экран
+              <img>
+            </button>
+            <button class="controls__element controls-btn controls-btn--hd">HD качество
+              <img>
+              <span>HD</span>
+            </button>
+          </div>
+        </section>
+        <section class="video-block__description description section">
+          <p class="description__video-title">Borat_greets.mp4</p>
+          <div class="description__likes-counters-wrapper">
+            <button class="description__likes-button likes-btn likes-btn--like">
+              <img>
+            </button>
+            <span class="description__likes-counter description__likes-counter--like">14 тыс.</span>
+            <button class="description__likes-button likes-btn likes-btn--dislike"></button>
+            <span class="description__likes-counter description__likes-counter--dislike">503</span>
+          </div>
+          <p class="description__views">
+            <span class="description__views-counter">728 904</span> просмотра
+          </p>
+          <div class="description__action-block">
+            <button class="description__action-button action-btn action-btn--add">
+              <img>
+            </button>
+            <button class="description__action-button action-btn action-btn--share">
+              <img>
+            </button>
+            <button class="description__action-button action-btn action-btn--link">
+              <img>
+            </button>
+          </div>
+        </section>
+      </article>
+      <section class="content__preview preview section">
+        <ul class="preview__list">
+          <li class="preview__item preview__item--first">
+            <a href="#">
+              <img src="img/preview_first.jpg" class="preview__picture">
+            </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">Просмотренное</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Плэйлист</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Выход</a>
+          <li class="preview__item preview__item--second">
+            <a href="#">
+              <img src="img/preview_second.jpg" class="preview__picture">
+            </a>
           </li>
         </ul>
-      </nav>
-      <button class="header__menu-button hamburger-toggle">
-        <div class="hamburger-toggle__bar"></div>
-      </button>
-      <a class="header__logo logo">
-        <span class="logo__text--strong">Mega</span>Tube</a>
-      <form class="header__search-wrap search-wrap">
-        <label class="search-wrap__label">
-          <input type="search" id="search-text" name="search-text" size="10" placeholder="Найти..." class="search-wrap__text">
-          <img src="img/search_icon.png" class="search-wrap__icon" width="27" height="30">
-        </label>
-      </form>
-    </div>
-  </header>
-  <main class="page__content content">
-    <h1 class="page__title visually-hidden">Сервис MegaTube</h1>
-    <article class="content__video-block video-block">
-      <h2 class="video-block__title visually-hidden">Видео Borat greets</h2>
-      <div class="video-block__video video">
-        <video class="video__video-clip" src="#" poster="img/preview.jpg"></video>
-        <button class="video__play-btn play-btn">
-          <div class="play-btn__wrapper">
-            <div class="play-btn__main-text">Смотреть</div>
-            <div class="play-btn__icon-wrap">
-              <img src="img/big-arrow.png"class="play-btn__icon">
-            </div>
-          </div>
-          <div class="play-btn__notice">Услуга предоставляется только лицам, достигшим&nbsp;совершеннолетия. Услуга платная.</div>
-        </button>
-      </div>
-      <div class="progress-bar">
-        <div class="progress-bar__play-position"></div>
-        <div class="progress-bar__load-position"></div>
-      </div>
-      <section class="video-block__controls controls section">
-        <div class="controls__element-wrapper">
-          <button class="controls__element controls-btn controls-btn--play">Play
-            <img>
-          </button>
-          <a href="#" class="controls__element controls-btn controls-btn--next">Next
-            <img>
-          </a>
-          <button class="controls__element controls-btn controls-btn--volume">Volume
-            <img>
-          </button>
-          <div class="controls__element time-wrapper">
-            <span class="time-wrapper__current-time">2:23 </span>
-            <span class="time-wrapper__duration">/ 7:31</span>
-          </div>
-          <button class="controls__element controls-btn controls-btn--wide-screen">Широкий экран
-            <img>
-          </button>
-          <button class="controls__element controls-btn controls-btn--full-screen">На весь экран
-            <img>
-          </button>
-          <button class="controls__element controls-btn controls-btn--hd">HD качество
-            <img>
-            <span>HD</span>
-          </button>
-        </div>
       </section>
-      <section class="video-block__description description section">
-        <p class="description__video-title">Borat_greets.mp4</p>
-        <div class="description__likes-counters-wrapper">
-          <button class="description__likes-button likes-btn likes-btn--like">
-            <img>
-          </button>
-          <span class="description__likes-counter description__likes-counter--like">14 тыс.</span>
-          <button class="description__likes-button likes-btn likes-btn--dislike"></button>
-          <span class="description__likes-counter description__likes-counter--dislike">503</span>
-        </div>
-        <p class="description__views">
-          <span class="description__views-counter">728 904</span> просмотров
-        </p>
-        <div class="description__action-block">
-          <button class="description__action-button action-btn action-btn--add">
-            <img>
-          </button>
-          <button class="description__action-button action-btn action-btn--share">
-            <img>
-          </button>
-          <button class="description__action-button action-btn action-btn--link">
-            <img>
-          </button>
-        </div>
-      </section>
-    </article>
-    <section class="content__preview preview section">
-      <ul class="preview__list">
-        <li class="preview__item preview__item--first">
-          <a href="#">
-            <img src="img/preview_first.jpg" class="preview__picture">
-
-          </a>
-        </li>
-        <li class="preview__item preview__item--second">
-          <a href="#">
-            <img src="img/preview_second.jpg" class="preview__picture">
-          </a>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer class="page__footer footer section">
-    <p class="footer__text">Стоимость подписки на услугу: 8,5 грн. (с НДС и ПФ). Продление подписки на каждые следующие сутки – автоматическое. Нажатием
-      кнопки «Начать просмотр» Вы подключаете подписку smotri.club и подтверждаете, что ознакомлены с <span class="footer__text--link">особенностями предоставления
-      услуги</span>. Стоимость подписки списывается с лицевого счета абонента. Бонус: если на счете менее 8,5 грн., стоимость по
-      сниженной цене – 4,25 грн. (с НДС и ПФ). Тех. поддержка: 504 с мобильного (бесплатно)
-    </p>
-    <a href="#" class="footer__back-link">Вернуться</a>
-  </footer>
-  <div class="popup">
-    <div class="popup__wrap">
-      <section class="popup__block">
-        <h2 class="section-title"></h2>
-        <button class="popup__close">Закрыть
-          <img src="#">
-        </button>
-        <form>
-          <input type="checkbox" id="agreement" name="agreement">
-          <label for="agreement">Подветрдите, что вы согласны с
-            <a href="#">условиями предоставления сервиса</a>
-          </label>
-          <a href="http://ya.ru">Продолжить</a>
-        </form>
+    </main>
+    <footer class="page__footer footer section">
+      <p class="footer__text">Стоимость подписки на услугу: 8,5 грн. (с НДС и ПФ). Продление подписки на каждые следующие сутки – автоматическое.
+        Нажатием кнопки «Начать просмотр» Вы подключаете подписку smotri.club и подтверждаете, что ознакомлены с
+        <span class="footer__text--link">особенностями предоставления услуги
+        </span>. Стоимость подписки списывается с лицевого счета абонента. Бонус: если на счете менее 8,5 грн., стоимость
+        по сниженной цене – 4,25 грн. (с НДС и ПФ). Тех. поддержка: 504 с мобильного (бесплатно)
+      </p>
+      <a href="#" class="footer__back-link">Вернуться</a>
+    </footer>
+    <div class="popup">
+      <div class="popup__wrap">
+        <section class="popup__block">
+          <!-- <h2 class="section-title visually-hidden">Подтверите согласие</h2> -->
+          <button class="popup__close">X</button>
+          <form class="agreement">
+            <label class="agreement__label">
+              <input type="checkbox" id="agreement-checkbox" name="agreement-checkbox" class="agreement__checkbox" checked> 
+              Подветрдите, что вы согласны с
+              <a href="#" class="agreement__link">условиями предоставления сервиса</a>
+            </label>
+            <a href="http://ya.ru" class="agreement__btn">Продолжить</a>
+          </form>
+      </div>
     </div>
-  </div>
-  </div>
-</body>
+    </div>
+  </body>

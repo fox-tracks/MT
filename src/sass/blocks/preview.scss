@@ -14,6 +14,22 @@
 
 .preview__item {
     width: 44%;
+    position: relative;
+
+    &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.2);
+        background-image: url("../img/play-preview_arrow.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 23%;
+    }
 }
 
 .preview__picture {
