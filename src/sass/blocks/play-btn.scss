@@ -1,0 +1,25 @@
+.play-btn {
+  @include indent(0, 0);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: rgb(2, 119, 154);
+  color: rgb(255, 255, 255);
+  min-width: 260px;
+  padding: 15px 20px;
+  font-size: inherit;
+}
+
+.play-btn__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.play-btn__main-text {
+  font-size: 40px;
+  font-weight: 700;
+}
+.play-btn__icon-wrap {
+  margin-left: 15px;
+}

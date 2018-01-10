@@ -22,5 +22,8 @@
     "last 2 versions"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
