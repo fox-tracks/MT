@@ -1,3 +1,11 @@
+.video-block {
+  margin-bottom: 15px;
+}
+
 .video-block__wrap {
   @include wrapper;
+}
+
+.video-block__controls{
+  margin-bottom: 10px;
 }

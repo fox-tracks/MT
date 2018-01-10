@@ -1,24 +1,40 @@
 .controls-btn {
   @include indent(0, 0);
+  display: block;
   margin-right: 15px;
   width: 25px;
-  height: 20px;
+  height: 30px;
   border: none;
   background-color: transparent;
   font-size: 0;
   background-image: url("../img/player-btns-spr.png");
   background-repeat: no-repeat;
+  background-origin: content-box;
 
   &--play {
-    background-position: 0 0;
+    background-position: 0 5px;
   }
 
   &--next {
-    background-position: 0 -30px;
+    background-position: 0 -24px;
   }
 
   &--volume {
-    background-position: 0 -60px;
+    background-position: 0 -53px;
+  }
+
+  &--wide-screen {
+    margin-left: auto;
+    background-position: 0 -82px;
+  }
+
+  &--full-screen {
+    background-position: 0 -111px;
+  }
+
+  &--hd {
+    background-position: 0 -140px;
+    margin-right: 0;
   }
 }
 

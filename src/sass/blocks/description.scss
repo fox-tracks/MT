@@ -1,0 +1,39 @@
+.description {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description__video-title {
+  @include indent(0, 0);
+  width: 50%;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.description__likes-counters-wrapper {
+  width: 50%;
+  font-size: 11px;
+  line-height: 11px;
+  color: rgb(164, 167, 172);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.description__likes-counter--like {
+  margin-right: 10px;
+}
+
+.description__views {
+  @include indent(0, 0);
+  width: 50%;
+  color: rgb(118, 118, 118);
+}
+
+.description__action-block {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

@@ -1,0 +1,24 @@
+.action-btn {
+    @include indent(0, 0);
+    display: block;
+    width: 18px;
+    height: 15px;
+    border: none;
+    background-color: transparent;
+    font-size: 0;
+    background-image: url("../img/video-info-spr.png");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+
+    &--add {
+        background-position: 0 -58px;
+    }
+
+    &--share {
+        background-position: 0 -85px;
+    }
+
+    &--link {
+        background-position: -3px -112px;
+    }
+}

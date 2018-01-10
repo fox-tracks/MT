@@ -1,0 +1,21 @@
+.likes-btn {
+    @include indent(0, 0);
+    display: block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 0;
+    background-image: url("../img/video-info-spr.png");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+
+    &--like {
+        background-position: 0 0;
+    }
+
+    &--dislike {
+        background-position: 0 -26px;
+    }
+}
