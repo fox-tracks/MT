@@ -1,0 +1,22 @@
+.footer {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: $background;
+    color: $text_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__text {
+    margin-bottom: 8px;
+    width: calc(100% + 5px);
+    text-align: justify;
+}
+
+.footer__back-link {
+    display: block;
+    color: inherit;
+    @include underline;
+    font-size: 12px;
+}

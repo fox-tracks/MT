@@ -1,0 +1,19 @@
+.preview {
+    margin-bottom: 20px;
+    // background-color: gradient
+}
+
+.preview__list {
+    @include indent(0, 0);
+    @include list();
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview__item {
+    width: 44%;
+}
+
+.preview__picture {
+    width: 100%;
+}
