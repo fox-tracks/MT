@@ -1,37 +1,49 @@
 .preview {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background-color: rgb(238, 238, 238);
-    box-shadow: inset 0 0 4px 1px rgb(200, 200, 200);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgb(238, 238, 238);
+  box-shadow: inset 0 0 4px 1px rgb(200, 200, 200);
 }
 
 .preview__list {
-    @include indent(0, 0);
-    @include list();
-    display: flex;
-    justify-content: space-between;
+  @include indent(0, 0);
+  @include list();
+  display: flex;
+  justify-content: space-between;
 }
 
 .preview__item {
-    width: 44%;
-    position: relative;
+  width: 44%;
+  position: relative;
 
-    &::before {
-        display: block;
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(255, 255, 255, 0.2);
-        background-image: url("../img/play-preview_arrow.png");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: 23%;
-    }
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: url("../img/play-preview_arrow.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 23%;
+  }
 }
 
 .preview__picture {
-    width: 100%;
+  width: 100%;
+}
+
+@media screen and (device-aspect-ratio: 2/3) {
+  .preview {
+    display: none;
+  }
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+  .preview {
+    display: none;
+  }
 }

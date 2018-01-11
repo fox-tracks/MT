@@ -1,25 +1,25 @@
 .footer {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background-color: $background;
-    color: $text_color;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: $background;
+  color: $text_color;
 }
 
 .footer__text {
-    @include indent(0, 0);
-    letter-spacing: -0.01em;
-    margin-bottom: 8px;
-    text-align: justify;
+  @include indent(0, 0);
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+  text-align: justify;
 
-    &--link {
-        @include underline;
-    }
+  &--link {
+    @include underline;
+  }
 }
 
 .footer__back-link {
-    display: block;
-    color: inherit;
-    @include underline;
-    font-size: 12px;
-    text-align: center;
+  @include underline;
+  display: block;
+  color: inherit;
+  font-size: 12px;
+  text-align: center;
 }

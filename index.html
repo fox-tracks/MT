@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.min.css">
     <!-- <script src="js/vendor/picturefill.min.js" async></script> -->
   </head>
-
   <body class="page">
     <header class="page__header header section">
       <div class="header__wrapper">
@@ -29,14 +28,14 @@
           </ul>
         </nav>
         <button class="header__menu-button hamburger-toggle">
-          <div class="hamburger-toggle__bar"></div>
+          <span class="hamburger-toggle__bar"></span>
         </button>
         <a class="header__logo logo">
           <span class="logo__text--strong">Mega</span>Tube</a>
         <form class="header__search-wrap search-wrap">
           <label class="search-wrap__label">
             <input type="search" id="search-text" name="search-text" size="10" placeholder="Найти..." class="search-wrap__text">
-            <img src="img/search_icon.png" class="search-wrap__icon" width="27" height="30">
+            <span class="search-wrap__icon"></span>
           </label>
         </form>
       </div>
@@ -48,13 +47,11 @@
         <div class="video-block__video video">
           <video class="video__video-clip" src="#" poster="img/preview.jpg"></video>
           <button class="video__play-btn play-btn">
-            <div class="play-btn__wrapper">
-              <div class="play-btn__main-text">Смотреть</div>
-              <div class="play-btn__icon-wrap">
-                <img src="img/big-arrow.png" class="play-btn__icon">
-              </div>
-            </div>
-            <div class="play-btn__notice">Услуга предоставляется только лицам, достигшим&nbsp;совершеннолетия. Услуга платная.</div>
+            <span class="play-btn__wrapper">
+              <span class="play-btn__main-text">Смотреть</span>
+              <span class="play-btn__icon"></span>
+            </span>
+            <span class="play-btn__notice">Услуга предоставляется только лицам, достигшим&nbsp;совершеннолетия. Услуга платная.</span>
           </button>
         </div>
         <div class="progress-bar">
@@ -63,27 +60,16 @@
         </div>
         <section class="video-block__controls controls section">
           <div class="controls__element-wrapper">
-            <button class="controls__element controls-btn controls-btn--play">Play
-              <img>
-            </button>
-            <a href="#" class="controls__element controls-btn controls-btn--next">Next
-              <img>
-            </a>
-            <button class="controls__element controls-btn controls-btn--volume">Volume
-              <img>
-            </button>
-            <div class="controls__element time-wrapper">
+            <button class="controls__element controls-btn controls-btn--play">Play</button>
+            <a href="#" class="controls__element controls-btn controls-btn--next">Next</a>
+            <button class="controls__element controls-btn controls-btn--volume">Volume</button>
+            <span class="controls__element time-wrapper">
               <span class="time-wrapper__current-time">2:23 </span>
               <span class="time-wrapper__duration">/ 7:31</span>
-            </div>
-            <button class="controls__element controls-btn controls-btn--wide-screen">Широкий экран
-              <img>
-            </button>
-            <button class="controls__element controls-btn controls-btn--full-screen">На весь экран
-              <img>
-            </button>
+            </span>
+            <button class="controls__element controls-btn controls-btn--wide-screen">Широкий экран</button>
+            <button class="controls__element controls-btn controls-btn--full-screen">На весь экран</button>
             <button class="controls__element controls-btn controls-btn--hd">HD качество
-              <img>
               <span>HD</span>
             </button>
           </div>
@@ -91,9 +77,7 @@
         <section class="video-block__description description section">
           <p class="description__video-title">Borat_greets.mp4</p>
           <div class="description__likes-counters-wrapper">
-            <button class="description__likes-button likes-btn likes-btn--like">
-              <img>
-            </button>
+            <button class="description__likes-button likes-btn likes-btn--like"></button>
             <span class="description__likes-counter description__likes-counter--like">14 тыс.</span>
             <button class="description__likes-button likes-btn likes-btn--dislike"></button>
             <span class="description__likes-counter description__likes-counter--dislike">503</span>
@@ -102,15 +86,9 @@
             <span class="description__views-counter">728 904</span> просмотра
           </p>
           <div class="description__action-block">
-            <button class="description__action-button action-btn action-btn--add">
-              <img>
-            </button>
-            <button class="description__action-button action-btn action-btn--share">
-              <img>
-            </button>
-            <button class="description__action-button action-btn action-btn--link">
-              <img>
-            </button>
+            <button class="description__action-button action-btn action-btn--add">Добавить</button>
+            <button class="description__action-button action-btn action-btn--share">Поделиться</button>
+            <button class="description__action-button action-btn action-btn--link">Ссылка</button>
           </div>
         </section>
       </article>
@@ -118,12 +96,12 @@
         <ul class="preview__list">
           <li class="preview__item preview__item--first">
             <a href="#">
-              <img src="img/preview_first.jpg" class="preview__picture">
+              <img src="img/preview_first.jpg" alt="Видео 1" class="preview__picture">
             </a>
           </li>
           <li class="preview__item preview__item--second">
             <a href="#">
-              <img src="img/preview_second.jpg" class="preview__picture">
+              <img src="img/preview_second.jpg" alt="Видео 2" class="preview__picture">
             </a>
           </li>
         </ul>
@@ -141,7 +119,6 @@
     <div class="popup">
       <div class="popup__wrap">
         <section class="popup__block">
-          <!-- <h2 class="section-title visually-hidden">Подтверите согласие</h2> -->
           <button class="popup__close">X</button>
           <form class="agreement">
             <input type="checkbox" id="agreement-checkbox" name="agreement-checkbox" class="agreement__checkbox">
@@ -150,8 +127,8 @@
             </label>
             <button class="agreement__btn" disabled>Продолжить</button>
           </form>
+        </section>
       </div>
-    </div>
     </div>
     <script src="js/index.js"></script>
   </body>

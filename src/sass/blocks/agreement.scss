@@ -1,3 +1,15 @@
+@keyframes blink {
+  0% {
+    border-color: rgb(113, 200, 10);
+  }
+  50% {
+    border-color: rgb(68, 124, 2);
+  }
+  100% {
+    border-color: rgb(113, 200, 10);
+  }
+}
+
 .agreement {
   display: flex;
   flex-direction: column;
@@ -16,14 +28,18 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  &:checked + .agreement__label:before {
+  &:checked+.agreement__label:before {
     background-image: url("../img/check.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &:checked ~.agreement__btn {
+  &:checked~.agreement__btn {
     background-color: $popup-btn-act;
+  }
+
+  &:not(:checked)+.agreement__label:before {
+    animation: blink 2s infinite ease;
   }
 }
 
@@ -34,6 +50,7 @@
   font-size: 11px;
   line-height: 14px;
   color: rgb(51, 51, 51);
+
   &:before {
     display: block;
     content: "";
@@ -59,8 +76,7 @@
 }
 
 .agreement__btn {
-  @include indent(0,
-  0);
+  @include indent(0, 0);
   border: none;
   display: block;
   max-width: 200px;

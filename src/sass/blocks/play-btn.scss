@@ -17,9 +17,21 @@
 }
 
 .play-btn__main-text {
+  display: block;
   font-size: 40px;
   font-weight: 700;
 }
-.play-btn__icon-wrap {
+
+.play-btn__icon {
   margin-left: 15px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/big-arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.play-btn__notice {
+  display: block;
 }
