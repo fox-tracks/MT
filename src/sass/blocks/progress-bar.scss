@@ -1,11 +1,11 @@
-@keyframes load-move {
-  from { width: 0; }
-  to { width: 92.5%; }
+@keyframes load {
+   from { width: 0;}
+  to { width: 92.5%;}
 }
 
-@keyframes play-move {
-  from { width: 0; }
-  to { width: 36%; }
+@keyframes play {
+  from { width: 0;}
+  to { width: 36%;}
 }
 
 
@@ -18,11 +18,13 @@
       position: absolute;
       top: 0;
       left: 0;
-    width: 36%;
     height: 10px;
+    width: 36%;
     background-color: rgb(73, 156, 204);
     z-index: 2;
-    animation: play-move 5s infinite ease-in-out;
+    animation-name: play;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 
@@ -45,11 +47,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 92.5%;
     height: 10px;
+    width: 92.5%;
     background-color: rgb(70, 70, 70);
     z-index: 1;
-    animation: load-move 5s infinite ease-in-out;
+    animation-name: load;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
   }
