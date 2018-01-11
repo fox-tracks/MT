@@ -11,6 +11,10 @@
   font-size: 10px;
   line-height: 10px;
   background-color: rgb(255, 255, 255);
+
+  &--transform {
+    left: 220px;
+  }
 }
 
 .page__header {
