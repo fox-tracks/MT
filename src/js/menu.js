@@ -3,7 +3,6 @@
 (function () {
     var menuBtn = document.querySelector('.hamburger-toggle');
     var page = document.querySelector('.page');
-    var menu = document.querySelector('.main-nav');
 
     menuBtn.addEventListener('click', function (e) {
         e.stopPropagation();
@@ -12,7 +11,7 @@
     });
 
     page.addEventListener('click', function (e) {
-        if (e.target !== menu) {
+        if (!e.target.classList.contains('main-nav__link')) {
             if (menuBtn.classList.contains('hamburger-toggle--close')) {
                 menuBtn.classList.remove('hamburger-toggle--close');
                 page.classList.remove('page--transform');
