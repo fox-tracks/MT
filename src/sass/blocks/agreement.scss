@@ -44,6 +44,8 @@
 }
 
 .agreement__btn {
+  @include indent(0, 0);
+  border: none;
   display: block;
   max-width: 200px;
   margin-top: auto;
