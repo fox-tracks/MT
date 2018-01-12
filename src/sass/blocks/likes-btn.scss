@@ -2,7 +2,7 @@
   @include indent(0, 0);
   display: block;
   margin-right: 10px;
-  width: 20px;
+  width: 26px;
   height: 20px;
   border: none;
   background-color: transparent;
@@ -12,7 +12,7 @@
   background-origin: content-box;
 
   &--like {
-    background-position: 0 0;
+    background-position: 6px 0;
   }
 
   &--dislike {

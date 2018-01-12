@@ -81,6 +81,7 @@ a {
 .main-nav {
   width: 220px;
   font-size: 18px;
+  font-weight: 400;
   background-color: #555555;
   color: white; }
 
@@ -98,7 +99,7 @@ a {
 
 .main-nav__link {
   display: block;
-  padding: 20px; }
+  padding: 22px; }
   .main-nav__link--active {
     background-color: #499ccc; }
 
@@ -290,7 +291,7 @@ a {
   width: 100%; }
 
 .video-block__controls {
-  margin-bottom: 10px; }
+  margin-bottom: 8px; }
 
 .controls {
   background-color: black;
@@ -310,7 +311,8 @@ a {
 
 .time-wrapper {
   font-size: 12px;
-  line-height: 12px; }
+  line-height: 12px;
+  margin-left: 10px; }
 
 .time-wrapper__current-time {
   color: white; }
@@ -330,7 +332,7 @@ a {
   background-color: #02779a;
   color: white;
   min-width: 260px;
-  padding: 15px 20px;
+  padding: 9px 20px 15px;
   font-size: inherit; }
 
 .play-btn__wrapper {
@@ -343,12 +345,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 15px; }
+  margin-bottom: 7px; }
 
 .play-btn__main-text {
   display: block;
   font-size: 40px;
-  font-weight: 700; }
+  font-weight: 700;
+  letter-spacing: -0.06em; }
 
 .play-btn__icon {
   margin-left: 15px;
@@ -366,7 +369,7 @@ a {
   margin: 0;
   padding: 0;
   display: block;
-  margin-right: 15px;
+  margin-right: 7px;
   width: 25px;
   height: 30px;
   border: none;
@@ -376,18 +379,18 @@ a {
   background-repeat: no-repeat;
   background-origin: content-box; }
   .controls-btn--play {
-    background-position: 0 5px; }
+    background-position: -6px 5px; }
   .controls-btn--next {
-    background-position: 0 -24px; }
+    background-position: -5px -24px; }
   .controls-btn--volume {
     background-position: 0 -53px; }
   .controls-btn--wide-screen {
     margin-left: auto;
-    background-position: 0 -82px; }
+    background-position: -4px -81px; }
   .controls-btn--full-screen {
-    background-position: 0 -111px; }
+    background-position: -4px -109px; }
   .controls-btn--hd {
-    background-position: 0 -140px;
+    background-position: 0 -138px;
     margin-right: 0; }
 
 .likes-btn {
@@ -395,7 +398,7 @@ a {
   padding: 0;
   display: block;
   margin-right: 10px;
-  width: 20px;
+  width: 26px;
   height: 20px;
   border: none;
   background-color: transparent;
@@ -404,7 +407,7 @@ a {
   background-repeat: no-repeat;
   background-origin: content-box; }
   .likes-btn--like {
-    background-position: 0 0; }
+    background-position: 6px 0; }
   .likes-btn--dislike {
     background-position: 0 -26px; }
 
@@ -414,6 +417,7 @@ a {
   display: block;
   width: 18px;
   height: 15px;
+  margin-left: 3px;
   border: none;
   background-color: transparent;
   font-size: 0;
@@ -421,11 +425,11 @@ a {
   background-repeat: no-repeat;
   background-origin: content-box; }
   .action-btn--add {
-    background-position: 0 -58px; }
+    background-position: -1px -56px; }
   .action-btn--share {
-    background-position: 0 -85px; }
+    background-position: 0 -83px; }
   .action-btn--link {
-    background-position: -3px -112px; }
+    background-position: -3px -110px; }
 
 .description {
   display: -webkit-box;
@@ -440,7 +444,7 @@ a {
   width: 50%;
   font-size: 18px;
   line-height: 18px;
-  margin-bottom: 8px; }
+  margin-bottom: 10px; }
 
 .description__likes-counters-wrapper {
   width: 50%;
@@ -458,7 +462,7 @@ a {
           align-items: center; }
 
 .description__likes-counter--like {
-  margin-right: 10px; }
+  margin-right: 12px; }
 
 .description__views {
   margin: 0;
@@ -526,7 +530,7 @@ a {
 
 .footer {
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   background-color: #cacaca;
   color: #888888; }
 
@@ -542,6 +546,7 @@ a {
 .footer__back-link {
   text-decoration: underline;
   display: block;
+  margin-left: 10px;
   color: inherit;
   font-size: 12px;
   text-align: center; }
@@ -561,7 +566,7 @@ a {
 
 .popup__block {
   position: absolute;
-  top: 50%;
+  top: 33.5%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -624,7 +629,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 12px 0;
+  padding: 10px 0 14px;
   height: 100%; }
 
 .agreement__checkbox {

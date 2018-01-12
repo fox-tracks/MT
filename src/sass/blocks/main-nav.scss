@@ -1,6 +1,7 @@
 .main-nav {
   width: 220px;
   font-size: 18px;
+  font-weight: 400;
   background-color: $menu_bg;
   color: rgb(255, 255, 255);
 }
@@ -19,7 +20,7 @@
 
 .main-nav__link {
   display: block;
-  padding: 20px;
+  padding: 22px;
   &--active {
     background-color: $active;
   }

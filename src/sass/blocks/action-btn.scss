@@ -3,6 +3,7 @@
   display: block;
   width: 18px;
   height: 15px;
+  margin-left: 3px;
   border: none;
   background-color: transparent;
   font-size: 0;
@@ -11,14 +12,14 @@
   background-origin: content-box;
 
   &--add {
-    background-position: 0 -58px;
+    background-position: -1px -56px;
   }
 
   &--share {
-    background-position: 0 -85px;
+    background-position: 0 -83px;
   }
 
   &--link {
-    background-position: -3px -112px;
+    background-position: -3px -110px;
   }
 }
