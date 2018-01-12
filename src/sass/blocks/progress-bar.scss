@@ -17,9 +17,9 @@
 }
 
 .progress-bar {
+  position: relative;
   height: 10px;
   background-color: rgb(39, 39, 39);
-  position: relative;
 
   &__play-position {
     position: absolute;

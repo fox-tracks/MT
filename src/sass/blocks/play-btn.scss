@@ -1,12 +1,12 @@
 .play-btn {
   @include indent(0, 0);
+  min-width: 260px;
+  padding: 9px 20px 15px;
+  color: rgb(255, 255, 255);
+  font-size: inherit;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
   background-color: rgb(2, 119, 154);
-  color: rgb(255, 255, 255);
-  min-width: 260px;
-  padding: 9px 20px 15px;
-  font-size: inherit;
 }
 
 .play-btn__wrapper {

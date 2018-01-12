@@ -7,10 +7,6 @@
   list-style: none;
 }
 
-@mixin wrapper() {
-  width: 100%;
-}
-
 @mixin underline() {
   text-decoration: underline;
 }

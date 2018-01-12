@@ -1,6 +1,6 @@
 .controls {
-  background-color: rgb(0, 0, 0);
   min-height: 30px;
+  background-color: rgb(0, 0, 0);
 }
 
 .controls__element {
@@ -9,6 +9,7 @@
 
 .controls__element-wrapper {
   display: flex;
-  width: 100%;
   align-items: center;
+  width: 100%;
+
 }
